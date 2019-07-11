@@ -1,0 +1,52 @@
+{
+    "jrTemplate1": {
+        "type": "object",
+        "objectId": "",
+        "titulo": "Registro de Tensión Arterial",
+        "textoPrincipal": "Qué deseas?",
+        "hintText": "Dime ayuda o salir o lo que sea que me quieras decir...",
+        "columna1" : "Enviar",
+        "columna2" : "Registrar",
+        "columna3" : "Consultar",
+        "logo" : "https://images-na.ssl-images-amazon.com/images/I/51bjPoWjMdL.png",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://www3.appsnumeric.net/images/alexa/tension/tensiometro_back1.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://www3.appsnumeric.net/images/alexa/tension/tensiometro_back1.png",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "image": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://d2o906d8ln7ui1.cloudfront.net/images/MollyforBT7.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://d2o906d8ln7ui1.cloudfront.net/images/MollyforBT7.png",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/cheeseskillicon.png"
+    }
+}
