@@ -1,0 +1,302 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-styles",
+            "version": "1.0.0"
+        },
+        {
+            "name": "alexa-layouts",
+            "version": "1.0.0"
+        },
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.0.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "height": "100vh",
+                "item": [
+                    {
+                        "type": "Image",
+                        "width": "100%",
+                        "height": "100%",
+                        "source": "${payload.jrTemplate1.backgroundImage.sources[0].url}",
+                        "scale": "best-fill",
+                        "overlayColor": "rgba(0, 0, 0, 0.4)"
+                    },
+                    {
+                        "type": "Image",
+                        "width": "100%",
+                        "height": "${viewport.shape == 'round' ? '130' : '150'}",
+                        "paddingTop": "20",
+                        "paddingRight": "${viewport.shape == 'round' ? '0' : '50'}",
+                        "paddingBottom": "20",
+                        "source": "${payload.jrTemplate1.logo}",
+                        "align": "${viewport.shape == 'round' ? 'center' : 'right'}",
+                        "position": "absolute"
+                    },
+                    {
+                        "type": "Text",
+                        "width": "100%",
+                        "paddingLeft": "${viewport.shape == 'round' ? '0' : '20'}",
+                        "paddingTop": "50",
+                        "textAlign": "${viewport.shape == 'round' ? 'center' : ''}",
+                        "text": "${payload.jrTemplate1.titulo}",
+                        "position": "absolute",
+                        "top": "${viewport.shape == 'round' ? '80' : '2'}"
+                    },
+                    {
+                        "type": "Text",
+                        "when": "${viewport.shape == 'round'}",
+                        "width": "100%",
+                        "height": "100%",
+                        "paddingLeft": "30",
+                        "paddingTop": "${viewport.shape == 'round' ? '250' : '0'}",
+                        "paddingRight": "30",
+                        "textAlign": "center",
+                        "textAlignVertical": "center",
+                        "color": "#FAFAFA",
+                        "fontStyle": "italic",
+                        "fontSize": "${viewport.shape == 'round' ? '28' : '50'}",
+                        "text": "${payload.jrTemplate1.textoPrincipal}",
+                        "fontWeight": "100",
+                        "position": "absolute"
+                    },
+                    {
+                        "type": "Text",
+                        "when": "${viewport.shape != 'round'}",
+                        "height": "100%",
+                        "paddingLeft": "${viewport.shape == 'round' ? '78' : '50'}",
+                        "paddingBottom": "${viewport.shape == 'round' ? '78' : '20'}",
+                        "textAlignVertical": "bottom",
+                        "fontStyle": "italic",
+                        "fontSize": "25",
+                        "text": "${payload.jrTemplate1.hintText}",
+                        "fontWeight": "100",
+                        "position": "absolute"
+                    },
+                    {
+                        "type": "Frame",
+                        "id": "frame_registrar",
+                        "width": "28%",
+                        "backgroundColor": "rgba(0, 77, 64, 0.5)",
+                        "borderRadius": "20",
+                        "position": "absolute",
+                        "left": "20",
+                        "top": "${viewport.shape == 'round' ? '230' : '250'}",
+                        "item": [
+                            {
+                                "type": "TouchWrapper",
+                                "id": "registrar",
+                                "width": "100%",
+                                "onPress": [
+                                    {
+                                        "type": "SendEvent",
+                                        "arguments": [
+                                            "..."
+                                        ]
+                                    },
+                                    {
+                                        "type": "SetState",
+                                        "componentId": "registrar",
+                                        "state": "disabled",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_registrar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_registrar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(0, 77, 64, 0.5)"
+                                    },
+                                    {
+                                        "type": "SetState",
+                                        "componentId": "registrar",
+                                        "state": "disabled",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_registrar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_registrar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(0, 77, 64, 0.5)"
+                                    }
+                                ],
+                                "item": [
+                                    {
+                                        "type": "Text",
+                                        "width": "100%",
+                                        "height": "100",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                        "fontSize": "${viewport.height == '800' ? '40' : '23'}",
+                                        "text": "${payload.jrTemplate1.columna2}",
+                                        "fontWeight": "800"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Frame",
+                        "id": "frame_consultar",
+                        "width": "32%",
+                        "backgroundColor": "rgba(216, 27, 96, 0.5)",
+                        "borderRadius": "20",
+                        "position": "absolute",
+                        "left": "34%",
+                        "top": "${viewport.shape == 'round' ? '230' : '250'}",
+                        "item": [
+                            {
+                                "type": "TouchWrapper",
+                                "id": "consultar",
+                                "width": "100%",
+                                "onPress": [
+                                    {
+                                        "type": "SendEvent",
+                                        "arguments": [
+                                            "..."
+                                        ]
+                                    },
+                                    {
+                                        "type": "SetState",
+                                        "componentId": "consultar",
+                                        "state": "disabled",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_consultar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_consultar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(216, 27, 96, 0.5)"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_consultar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_consultar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(216, 27, 96, 0.5)"
+                                    }
+                                ],
+                                "item": [
+                                    {
+                                        "type": "Text",
+                                        "id": "consultar_text",
+                                        "width": "100%",
+                                        "height": "100",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                        "fontSize": "${viewport.height == '800' ? '40' : '23'}",
+                                        "text": "${payload.jrTemplate1.columna3}",
+                                        "fontWeight": "800"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Frame",
+                        "id": "frame_enviar",
+                        "width": "30%",
+                        "backgroundColor": "rgba(255, 87, 34, 0.5)",
+                        "borderRadius": "20",
+                        "position": "absolute",
+                        "left": "68%",
+                        "top": "${viewport.shape == 'round' ? '230' : '250'}",
+                        "item": [
+                            {
+                                "type": "TouchWrapper",
+                                "id": "enviar",
+                                "width": "100%",
+                                "onPress": [
+                                    {
+                                        "type": "SendEvent",
+                                        "arguments": [
+                                            "..."
+                                        ]
+                                    },
+                                    {
+                                        "type": "SetState",
+                                        "componentId": "enviar",
+                                        "state": "disabled",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_enviar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_enviar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(255, 87, 34, 0.5)"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_enviar",
+                                        "property": "backgroundColor",
+                                        "value": "#FFFFFF"
+                                    },
+                                    {
+                                        "type": "SetValue",
+                                        "componentId": "frame_enviar",
+                                        "property": "backgroundColor",
+                                        "value": "rgba(255, 87, 34, 0.5)"
+                                    }
+                                ],
+                                "item": [
+                                    {
+                                        "type": "Text",
+                                        "width": "100%",
+                                        "height": "100",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "center",
+                                        "fontSize": "${viewport.height == '800' ? '40' : '23'}",
+                                        "text": "${payload.jrTemplate1.columna1}",
+                                        "fontWeight": "800"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
