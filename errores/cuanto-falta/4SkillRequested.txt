@@ -1,0 +1,82 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.b8f32649-c767-4204-aeb1-3302539da75d",
+		"application": {
+			"applicationId": "amzn1.ask.skill.47f8524d-99d9-4163-b48f-83c8a9ef5c64"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AFYF3RBQLKE4T4YCOVLC2LJC6KHZZYUTVKEIOKD6WVF5QMXHJLIK3EK4YCWLAHQQWYIMWH6MOTLDQ3PME4VVY75Y3TYOL5KZIDTTJFY7WOWBRQRH4L2VBPTCJ2LLWN62OIVATCWQOOQAFL66LZLK5FJLVJJ3XTKDF5LLVF7RPHRZXCNMWNWNVZVRH7J2TGLYFYIT4Y2W4C5I2TQ"
+		}
+	},
+	"context": {
+		"Alexa.Presentation.APL": {
+			"token": "",
+			"version": "APL_WEB_RENDERER_GANDALF",
+			"componentsVisibleOnScreen": [
+				{
+					"uid": ":1007",
+					"position": "1024x600+0+0:0",
+					"type": "mixed",
+					"tags": {
+						"viewport": {}
+					},
+					"entities": []
+				}
+			]
+		},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.47f8524d-99d9-4163-b48f-83c8a9ef5c64"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AFYF3RBQLKE4T4YCOVLC2LJC6KHZZYUTVKEIOKD6WVF5QMXHJLIK3EK4YCWLAHQQWYIMWH6MOTLDQ3PME4VVY75Y3TYOL5KZIDTTJFY7WOWBRQRH4L2VBPTCJ2LLWN62OIVATCWQOOQAFL66LZLK5FJLVJJ3XTKDF5LLVF7RPHRZXCNMWNWNVZVRH7J2TGLYFYIT4Y2W4C5I2TQ"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AHJM4H73HPIX4D3DDNKZLCAOOQX5DAGXRNDB56E2BIHU6LDKWL4ODR7SHWO2PWHU3UHJJJ554LMZGCQBX22WZT3DUGX2RFJD7CNS6PYMLMU2GDWORGPYMYXWXMD7TTMSUPG65AJ7OVCRUGF6P3NIB5K4S7O65UYLF6U3LKUWYLVX6OUFBZAVU",
+				"supportedInterfaces": {
+					"Alexa.Presentation.APL": {
+						"runtime": {
+							"maxVersion": "1.0"
+						}
+					}
+				}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjQ3Zjg1MjRkLTk5ZDktNDE2My1iNDhmLTgzYzhhOWVmNWM2NCIsImV4cCI6MTU2MjkyMjMzNywiaWF0IjoxNTYyOTIyMDM3LCJuYmYiOjE1NjI5MjIwMzcsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFBOUxPTWxyQzNiaHZyWm1JYWZJUnBRS3dFQUFBQUFBQUFNYk4wNDRqcytLU2o0K1E5dTB6V2Z4dEc5dTVrc0xuR2lVRDNoaEprTU12Sk8zZkVRQnNlUlpPeXhSTDJPU2xMVkdUaEI0MGQxTnppUSs5cmZVOHJ3QmV1MHpXT1Z0cjNtMmtBRTVlQWRFWE9JZG1BdWhGcUdISmc5VG90YS9hcGVya0VKMGs5SWFFRzNQTU5Cdm5JRy9kWGhJa1RzeHBsV040YjA0aUQ2blhRNlN1VnVtckovem91SXZxUzBvREJKMyszQWh2RzV4ZnV1bTRDL0tXdzM3ZzhUODQzS3JyYm5Ja29HbG1jWDcxZjN0Q0REcXJlWlBhbWtKTnROdWliSWpqUDhzcmVMNUhwc0hGalM5Znl3M1pCME9zRUl0dzFCUHpLaWxQcmJUcUlMMms4TDJHSlpjZlpZK3M3dnBYdkRHWW81bUFFRUhnNEQrdHliKzB4aXgxc2ROWnZzTW8zRjNBMTlsaGhrR1FSRjFxTTVQN2szVEx2dS9hYTQzbTNZU3d6Ujg5Z09ZRHo4Y1E9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFISk00SDczSFBJWDREM0RETktaTENBT09RWDVEQUdYUk5EQjU2RTJCSUhVNkxES1dMNE9EUjdTSFdPMlBXSFUzVUhKSko1NTRMTVpHQ1FCWDIyV1pUM0RVR1gyUkZKRDdDTlM2UFlNTE1VMkdEV09SR1BZTVlYV1hNRDdUVE1TVVBHNjVBSjdPVkNSVUdGNlAzTklCNUs0UzdPNjVVWUxGNlUzTEtVV1lMVlg2T1VGQlpBVlUiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRllGM1JCUUxLRTRUNFlDT1ZMQzJMSkM2S0haWllVVFZLRUlPS0Q2V1ZGNVFNWEhKTElLM0VLNFlDV0xBSFFRV1lJTVdINk1PVExEUTNQTUU0VlZZNzVZM1RZT0w1S1pJRFRUSkZZN1dPV0JSUVJINEwyVkJQVENKMkxMV042Mk9JVkFUQ1dRT09RQUZMNjZMWkxLNUZKTFZKSjNYVEtERjVMTFZGN1JQSFJaWENOTVdOV05WWlZSSDdKMlRHTFlGWUlUNFkyVzRDNUkyVFEifX0.cLbfPqJMdaxRnZhyVvQGyKqFNiAmlwwv5VObf-69ytiMlwQfjlfGxQVNYxwALeKvxLo1e7FjmSZeuS6RJlXpEi9kaatRI-pPn5G8hkjNrf3DI7iWCld-r4_BxE3Zd3QKlJCKuMURRh05bB8u1phDQWHRKujPSxIdjgpegWpng9ADCOUk8mWWyONA6sgwgBr6oux-cPoGeXBaDkGe3TGNJM690U0R70nVeTYlTINqc0gPfl1-eNtYSk-JaYOAU6oWE9L5Pz3VFHgOrpjPuU-S-MDKlsWze-bWEy2xv-eBXyHTjAMT2lPXoqm-zKBMrVQDffWZytrgLns6Sk2FaQtiSg"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		}
+	},
+	"request": {
+		"type": "LaunchRequest",
+		"requestId": "amzn1.echo-api.request.941a883a-a170-4bf6-b525-9a50efd6e1c3",
+		"timestamp": "2019-07-12T09:00:37Z",
+		"locale": "es-ES",
+		"shouldLinkResultBeReturned": false
+	}
+}
